@@ -31,7 +31,7 @@ bool WriteFunction(fstream& _stream, int n, char** argv)
 {
 	if (1 == n && !strcmp("-x", argv[0]))
 	{
-		//¸ß¼¶¹¦ÄÜ
+		//é«˜çº§åŠŸèƒ½
 	}
 	map<char, int>::iterator iter;
 	for (int i = 1; i < n; i++)
@@ -144,16 +144,16 @@ bool GetSample(int n, string& _str)
 	switch (n)
 	{
 	case 0:
-		_str = "×Ö·ûÊý£º";
+		_str = "å­—ç¬¦æ•°ï¼š";
 		break;
 	case 1:
-		_str = "µ¥´ÊÊý£º";
+		_str = "å•è¯æ•°ï¼š";
 		break;
 	case 2:
-		_str = "ÐÐÊý£º";
+		_str = "è¡Œæ•°ï¼š";
 		break;
 	case 5:
-		_str = "´úÂëÐÐ/¿ÕÐÐ/×¢ÊÍÐÐ£º";
+		_str = "ä»£ç è¡Œ/ç©ºè¡Œ/æ³¨é‡Šè¡Œï¼š";
 		break;
 	default:
 		return false;
